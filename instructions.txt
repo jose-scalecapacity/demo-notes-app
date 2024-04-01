@@ -30,4 +30,8 @@ Deploy SST App
     - Then "aws sts get-caller-identity" to confirm authentication
     - Retry previous command
 - After successful deployment, ctrl+click url to open endpoint.
-- CTRL+C to stop local environment. 
+- CTRL+C to stop local environment.
+
+Initialize GitHub Repo
+- Setup typical github Repo
+
