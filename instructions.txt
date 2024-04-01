@@ -34,4 +34,19 @@ Deploy SST App
 
 Initialize GitHub Repo
 - Setup typical github Repo
+- Use git config to set user.email and user.name
+
+Create a Stack
+- Create a new file in stacks/StorageStack.ts
+- Add DynamoDB infrastructure details
+
+Remove template files
+- "pnpm sst remove API"
+- "rm -r stacks/MyStack.ts, packages/core/src/todo.ts, packages/core/src/event.ts, packages/functions/src/lambda.ts, packages/functions/src/todo.ts, packages/functions/src/events"
+
+Add the new stack to the app
+- Replace contents of sst.config.ts
+
+Deploy the app
+- "pnpm sst dev"
 
