@@ -50,3 +50,9 @@ Add the new stack to the app
 Deploy the app
 - "pnpm sst dev"
 
+Modify Stack
+- Add S3 Bucket
+
+Deploy the app
+- "pnpm sst dev"
+
