@@ -56,3 +56,9 @@ Modify Stack
 Deploy the app
 - "pnpm sst dev"
 
+Add API for new note
+- Add code for new API stack
+- Add code for creating a new note
+- Install packages, run the following in the packages/functions/ folder (Not in root)
+    - pnpm add --save aws-sdk aws-lambda uuid
+    - pnpm add --save-dev @types/uuid @types/aws-lambda
