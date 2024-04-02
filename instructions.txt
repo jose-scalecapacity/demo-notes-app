@@ -71,3 +71,13 @@ Invoke-WebRequest -Uri "https://71ez3zthu8.execute-api.us-east-1.amazonaws.com/n
 -Method POST `
 -Headers @{"Content-Type"="application/json"} `
 -Body '{"content":"Hello World","attachment":"hello.jpg"}'
+
+Update an item
+Invoke-WebRequest -Uri "https://71ez3zthu8.execute-api.us-east-1.amazonaws.com/notes/bf220ce0-f10e-11ee-ae68-b34357c61b60" `
+-Method PUT `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"content":"New World","attachment":"new.jpg"}'
+
+To Delete an item
+Invoke-WebRequest -Uri "https://71ez3zthu8.execute-api.us-east-1.amazonaws.com/notes/bf220ce0-f10e-11ee-ae68-b34357c61b60" `
+-Method DELETE
