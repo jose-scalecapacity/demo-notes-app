@@ -62,3 +62,12 @@ Add API for new note
 - Install packages, run the following in the packages/functions/ folder (Not in root)
     - pnpm add --save aws-sdk aws-lambda uuid
     - pnpm add --save-dev @types/uuid @types/aws-lambda
+
+Deploy from project folder
+- "pnpm sst dev"
+
+Test API (Windows PowerShell style command)
+Invoke-WebRequest -Uri "https://71ez3zthu8.execute-api.us-east-1.amazonaws.com/notes" `
+-Method POST `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"content":"Hello World","attachment":"hello.jpg"}'
