@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  boto3:
+    specifier: ^0.0.1
+    version: 0.0.1
+
 devDependencies:
   '@tsconfig/node18':
     specifier: ^18.2.4
@@ -2961,6 +2966,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /boto3@0.0.1:
+    resolution: {integrity: sha512-IFT1HCaLUSzk//uM4++Lv65Rf/hT3GGjLWMkZvDuutPgV/uoWQFTpixfnWhOfWKFUFQxYeg0JbLfQ6PpQJBGYw==}
+    dev: false
 
   /bowser@2.11.0:
     resolution: {integrity: sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==}
