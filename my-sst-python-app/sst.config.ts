@@ -4,7 +4,7 @@ import { Api } from "sst/constructs";
 export default {
   config(_input) {
     return {
-      name: "my-sst-app",
+      name: "my-sst-python-app",
       region: "us-east-1",
     };
   },

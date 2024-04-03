@@ -1,5 +1,5 @@
 {
-  "name": "my-sst-app",
+  "name": "my-sst-python-app",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,15 +12,11 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.4",
+    "sst": "^2.41.4",
     "aws-cdk-lib": "2.132.1",
     "constructs": "10.3.0",
-    "sst": "^2.41.4",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "@tsconfig/node18": "^18.2.4"
   },
-  "workspaces": [],
-  "dependencies": {
-    "boto3": "^0.0.1",
-    "uuid": "^9.0.1"
-  }
+  "workspaces": []
 }
