@@ -10,12 +10,14 @@ export default {
   },
   stacks(app) {
     app.setDefaultFunctionProps({
-      runtime: "python3.11",
+      runtime: "python3.10",
     });
     app.stack(function Stack({ stack }) {
       const api = new Api(stack, "api", {
         routes: {
           "GET /": "functions/lambda.handler",
+          "POST /upload":"functions/upload.handler",
+          "GET /transcribe": "functions/transcribe.handler",
         },
       });
       stack.addOutputs({
