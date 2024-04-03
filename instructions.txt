@@ -18,7 +18,8 @@ Setup SST
 - If not already, download/install Node.js, including Chocolatey (install option), https://nodejs.org/en/download/current
 - Install pnpm via Chocolatey, "choco install pnpm"
 - Execute commands,
-    - "pnpm create sst notes"
+    - "pnpm create sst <<project name>>" (default TypeScript)
+    - "pnpm create sst <<project name>> --template=other/python" (python language)
     - "cd notes"
     - "pnpm install"
 - App configuration can be changed via ./notes/sst.config.ts
