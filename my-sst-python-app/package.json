@@ -20,6 +20,7 @@
   },
   "workspaces": [],
   "dependencies": {
-    "boto3": "^0.0.1"
+    "boto3": "^0.0.1",
+    "uuid": "^9.0.1"
   }
 }

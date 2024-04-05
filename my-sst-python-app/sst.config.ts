@@ -15,8 +15,8 @@ export default {
     app.stack(function Stack({ stack }) {
       const api = new Api(stack, "api", {
         routes: {
-          "GET /": "functions/lambda.handler",
-          "POST /upload":"functions/upload.handler",
+          "GET /": "functions/lambda.handler",           
+          "PUT /s3":"functions/s3.handler",
           "GET /transcribe": "functions/transcribe.handler",
         },
       });
