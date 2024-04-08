@@ -13,6 +13,8 @@ Setup AWS
     - AWS Secret Access Key:
     - Default region name: us-east-1
     - Default output format: JSON
+- Run "aws configure set aws_session_token <<your aws session token>>"
+- Then "aws sts get-caller-identity" to confirm authentication
 
 Setup SST
 - If not already, download/install Node.js, including Chocolatey (install option), https://nodejs.org/en/download/current
@@ -20,16 +22,12 @@ Setup SST
 - Execute commands,
     - "pnpm create sst <<project name>>" (default TypeScript)
     - "pnpm create sst <<project name>> --template=other/python" (python language)
-    - "cd notes"
+    - "cd <<project name>>"
     - "pnpm install"
 - App configuration can be changed via ./notes/sst.config.ts
 
 Deploy SST App
 - In terminal run, "pnpm sst dev"
-- If "Error: The security token included in the request is invalid."
-    - Run "aws configure set aws_session_token <<your aws session token>>"
-    - Then "aws sts get-caller-identity" to confirm authentication
-    - Retry previous command
 - After successful deployment, ctrl+click url to open endpoint.
 - CTRL+C to stop local environment.
 
