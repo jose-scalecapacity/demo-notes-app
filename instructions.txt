@@ -7,13 +7,13 @@ Setup VSCode
 Setup AWS
 - Open a new terminal,
     - "pip install awscli"
-    - "aws configure"
+    - "aws configure --profile <<profile name>>"
 - Input AWS credentials per prompts:
     - AWS Access Key ID:
     - AWS Secret Access Key:
     - Default region name: us-east-1
     - Default output format: JSON
-- Run "aws configure set aws_session_token <<your aws session token>>"
+- Run "aws configure set aws_session_token <<your aws session token>> --profile <<profile name>>"
 - Then "aws sts get-caller-identity" to confirm authentication
 
 Setup SST
@@ -31,9 +31,9 @@ Deploy SST App
 - After successful deployment, ctrl+click url to open endpoint.
 - CTRL+C to stop local environment.
 
-Initialize GitHub Repo
-- Setup typical github Repo
-- Use git config to set user.email and user.name
+Initialize Git Repo
+- "python -m pip install git-remote-codecommit"
+- git clone codecommit://<<profile name>>@<<repo name>> <<local repo name>>
 
 Create a Stack
 - Create a new file in stacks/StorageStack.ts
